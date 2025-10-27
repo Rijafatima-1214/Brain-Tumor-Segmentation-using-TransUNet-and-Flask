@@ -1,0 +1,57 @@
+Brain Tumor Segmentation using TransUNet with Flask-Based Visualization 
+Project Domain / Category 
+Deep Learning based Web Application 
+Abstract / Introduction 
+Brain tumor segmentation is a critical task in medical image analysis, enabling precise detection of 
+tumor regions for diagnosis and treatment planning. In this project, you will develop a deep 
+learning-based segmentation model using TransUNet, a hybrid CNN + Transformer-based U-Net 
+model, to automatically segment brain tumors from MRI scans in the BraTS 2023 dataset. 
+In addition to training and evaluating the segmentation model, you will develop a Flask-based web 
+application that allows users to upload MRI images and visualize the predicted segmentation results 
+alongside ground truth masks. 
+Functional Requirements: 
+The following are basic requirements: 
+• Implement TransUNet for brain tumor segmentation using PyTorch. 
+• Preprocess the BraTS 2023 dataset (multi-modal MRI images). 
+• Train the model using Dice Loss + Cross-Entropy Loss and evaluate its performance. 
+• Display segmentation results as images with ground truth comparison. 
+• Develop a Flask web application where users can upload an MRI scan and receive the 
+predicted segmentation mask. 
+Note: 
+For your better understanding the guidelines that how to start and study/code the details of 
+all above points is as follows: 
+Task 1: Understanding the Dataset 
+• Study the U-Net model and TransUNet model. 
+• Study the BraTS 2023 dataset (FLAIR, T1, T1ce, T2 modalities). 
+• Understand tumor segmentation labels (Whole Tumor, Tumor Core, Enhancing Tumor). 
+• Code to visualize sample MRI images and corresponding masks. 
+Task 2: Preprocessing & Data Augmentation 
+• Load and preprocess MRI scans using Nibabel. 
+• Normalize images and apply augmentations (flipping, rotation, resizing). 
+• Convert segmentation masks into one-hot encoded format. 
+Task 3: Implementing TransUNet for Brain Tumor Segmentation 
+• Implement the TransUNet model using PyTorch. 
+• Define loss function (Dice Loss + Cross-Entropy) and optimizer (AdamW). 
+• Train the model and monitor performance metrics. 
+Task 4: Model Evaluation & Results Visualization 
+• Evaluate the model using Dice Score, IoU. 
+• Compare TransUNet vs U-Net segmentation performance. 
+• Display segmentation results alongside ground truth masks. 
+Task 5: Developing a Flask Web App for Segmentation Visualization 
+• Build a Flask-based web interface for MRI scan uploads. 
+• Integrate the trained TransUNet model for segmentation predictions. 
+• Display input image, predicted segmentation mask, and ground truth mask. 
+Bonus Tasks (Optional, if successfully completed any of the following, 5 extra marks will be 
+awarded)  
+• Optimize model performance using hyperparameter tuning. 
+• Improve segmentation quality using post-processing (CRF, morphological operations). 
+Tools:  
+• Operating System: Window 7 and above 
+• RAM 8 GB or more (Dataset size is 3 GB so it cannot be executed on small size RAM) 
+• Anaconda        
+Download sources: 
+OR jupyter notebook OR Google Colab (Python)  
+https://anaconda.org/ 
+https://jupyter.org/ 
+Language of the Project: 
+Python
